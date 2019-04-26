@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://gun/Gun.gd" type="Script" id=1]
+[ext_resource path="res://gun/Bullet.tscn" type="PackedScene" id=2]
+
+[node name="Gun" type="Position2D"]
+position = Vector2( 17.6051, 8.80255 )
+script = ExtResource( 1 )
+fire_rate = 5
+bullet = ExtResource( 2 )
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
